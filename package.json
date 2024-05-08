@@ -1,0 +1,45 @@
+{
+  "name": "rspack-react-ts-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "NODE_ENV=development rspack serve",
+    "dev1": "rsbuild dev",
+    "build": "rsbuild build",
+    "build1": "NODE_ENV=production rspack build",
+    "map": "cross-env ANA=1 rspack build",
+    "map1": "cross-env ANA=1 rsbuild build",
+    "preview": "serve dist -p 4200",
+    "preview1": "rsbuild preview"
+  },
+  "dependencies": {
+    "@types/webpack-bundle-analyzer": "^4.7.0",
+    "http-server": "^14.1.1",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "serve": "^14.2.3",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@module-federation/enhanced": "^0.1.11",
+    "@rsbuild/core": "^0.6.11",
+    "@rsbuild/plugin-react": "^0.6.11",
+    "@rspack/cli": "^0.6.4",
+    "@rspack/core": "^0.6.4",
+    "@rspack/plugin-react-refresh": "^0.6.4",
+    "@types/lodash": "^4.17.1",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "inject-manifest-plugin": "^0.6.2",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "react-refresh": "^0.14.0",
+    "tailwindcss": "^3.4.3",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "workbox-webpack-plugin": "^7.1.0"
+  }
+}
